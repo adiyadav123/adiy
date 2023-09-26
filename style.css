@@ -147,8 +147,8 @@ nav > h1 {
 /* HOMEPAGE  */
 
 .homepage {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw;
   background-image: url("./assets/home_bg.png");
   background-position: center;
   background-size: cover;
@@ -234,11 +234,11 @@ nav > h1 {
 /* ABOUT SECTION  */
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 100px;
   padding-top: 50px;
-  background-color: white;
+  background-color: #faf9ff;
   color: black;
   display: flex;
   margin: 0;
@@ -356,7 +356,7 @@ nav > h1 {
   height: 7px;
   background: linear-gradient(
     90deg,
-    var(--light-blue) 80%,
+    var(--bright-blue) 80%,
     rgb(229, 229, 229) 20%
   );
 }
@@ -389,11 +389,11 @@ nav > h1 {
 
 /* SERVICES SECTIONS  */
 .services{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 100px;
   padding-top: 50px;
-  background-color: white;
+  background-color: #faf9ff;
   color: black;
   display: flex;
   align-items: center;
@@ -429,10 +429,12 @@ nav > h1 {
 }
 .boxes .box1 .image {
   font-size: 45px;
+  margin: 10px;
   color: var(--yellow);
 }
 .boxes .box1 .head{
   color: white;
+  margin: 10px;
   font-size: 19px;
 }
 .boxes .box1 .text {
@@ -454,10 +456,12 @@ nav > h1 {
 }
 .boxes .box2 .image {
   font-size: 45px;
+  margin: 10px;
   color: #b49c40;
 }
 .boxes .box2 .head{
   font-size: 19px;
+  margin: 10px;
 }
 .boxes .box2 .text {
   font-size: 14px;
@@ -478,10 +482,12 @@ nav > h1 {
 }
 .boxes .box3 .image {
   color: var(--yellow);
+  margin: 10px;
   font-size: 45px;
 }
 .boxes .box3 .head{
   font-size: 19px;
+  margin: 10px;
 }
 .boxes .box3 .text {
   font-size: 14px;
@@ -500,6 +506,52 @@ nav > h1 {
   box-shadow: 0 0 40px #eb9090;
 }
 
+
+
+
+
+
+/* RECENT WORKS PAGE  */
+.recent_works{
+  min-height: 100vh;
+  width: 100vw;
+  padding: 100px;
+  background-color: #faf9ff;
+}
+.recent_works .head{
+  margin-bottom: 40px;
+}
+.recent_works .cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.recent_works .first_three, .recent_works .second_three{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent_works .first_three .first, .recent_works .second_three .first{
+  height: 50vh;
+  width: 30%;
+  margin: 30px;
+  background-color: white;
+  box-shadow: 0 0 20px rgb(229, 226, 226);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.recent_works .first_three .first:hover, .recent_works .second_three .first:hover{
+
+  transform: scale(0.9);
+
+}
 
 
 /* MAKING RESPONSIVE  */
@@ -537,6 +589,7 @@ nav > h1 {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 10px #eb9090;
+    margin:39px;
   }
   .about_content .image img {
     transform: scale(0.9);
@@ -554,6 +607,7 @@ nav > h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 50px;
   }
 
   .only_text,
@@ -591,7 +645,7 @@ nav > h1 {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 20vh;
+    height: 60vh;
     color: black;
     margin-top: 100px;
   }
@@ -601,8 +655,9 @@ nav > h1 {
 
   .services {
     width: 100%;
-    padding: 0;
+    padding: 50px;
     margin-top: -35px;
+    background-color: #faf9ff;
   }
   .services .ser_head{
     height: 10vh;
@@ -611,7 +666,6 @@ nav > h1 {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: red;
     transform: scale(0.9);
   }
   .services .boxes .box1 {
@@ -631,5 +685,45 @@ nav > h1 {
   .ser_head{
     text-align: center;
   }
+  .recent_works .first_three, .recent_works .second_three{
+    transform: scale(0.9);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .recent_works .first_three .first, .recent_works .second_three .first{
+    transform: scale(0.9);
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(229, 226, 226);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .recent_works{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    background-color: #faf9ff;
+  }
 
+}
+
+
+footer {
+  height: 10vh;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+footer a {
+  font-size: 10px;
+  color: white;
+  font-family: 'Borel', sans-serif;
 }

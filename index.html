@@ -12,20 +12,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
   </head>
   <body>
     <a name="home"></a>
     <div class="container">
       <nav>
-        <h1>
-          <a href="#home"> Aditya <span class="red"> . </span> </a>
+        <h1 data-aos="fade-right">
+          <a href="./index.html"> Aditya <span class="red"> . </span> </a>
         </h1>
-        <div class="links" id="links">
+        <div class="links" id="links" data-aos="fade-right">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#home">Works</a></li>
+            <li><a href="#works">Works</a></li>
             <li><a href="#home">Blog</a></li>
             <li><a href="#home">Contact</a></li>
           </ul>
@@ -39,14 +43,14 @@
       </nav>
 
       <div class="homepage">
-        <div class="img">
+        <div class="img" data-aos="fade-down">
           <img src="./assets/aditya.png" alt="image" />
         </div>
-        <div class="details">
+        <div class="details" data-aos="fade-right">
           <h1 class="name">Aditya Yadav</h1>
           <p class="work">I'm a Frontend and Backend Developer.</p>
         </div>
-        <div class="home_links">
+        <div class="home_links" data-aos="fade-left">
           <div class="github">
             <a href=""><i class="fa-brands fa-github"></i></a>
           </div>
@@ -63,7 +67,7 @@
             <a href=""><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
-        <div class="scroll">
+        <div class="scroll" data-aos="fade-down">
           <a href="#about">
             <p class="tag">Scroll down</p>
             <i class="fa-solid fa-arrow-down"></i>
@@ -74,15 +78,15 @@
       <!-- ABOUT PAGE  -->
       <div class="about">
         <a name="about"></a>
-        <div class="about_head">
+        <div class="about_head" data-aos="fade-down-right">
           <h1>About Me</h1>
         </div>
-        <div class="about_content">
-          <div class="image">
+        <div class="about_content" >
+          <div class="image" data-aos="fade-left">
             <img src="./assets/aditya.png" alt="image" />
           </div>
-          <div class="text">
-            <div class="only_text">
+          <div class="text" data-aos="fade-up">
+            <div class="only_text" data-aos="fade-up" data-aos-delay="50">
               <p>
                 I'm Aditya Yadav, a web devloper from India. 
                 With expertise in both front-end and 
@@ -92,13 +96,13 @@
                 your digital vision to life.
               </p>
               <br>
-              <button>
+              <button data-aos="fade-up">
                 Download CV
               </button>
             </div>
-            <div class="stats">
-                <div class="web">
-                    <div class="tag">
+            <div class="stats" data-aos="fade-left">
+                <div class="web" data-aos="fade-right">
+                    <div class="tag" data-aos="fade-right">
                         <p>
                             <p class="tag">
                                 Web Development
@@ -108,11 +112,11 @@
                             </p>
                         </p>
                     </div>
-                    <p class="web_stat"></p>
+                    <p class="web_stat" data-aos="fade-left"></p>
                 </div>
                 <br>
-                <div class="py">
-                    <div class="tag">
+                <div class="py" data-aos="fade-left">
+                    <div class="tag" data-aos="fade-right">
                         <p>
                             <p class="tag">
                                Python
@@ -122,11 +126,11 @@
                             </p>
                         </p>
                     </div>
-                    <p class="py_stat"></p>
+                    <p class="py_stat" data-aos="fade-left"></p>
                 </div>
                 <br>
-                <div class="node">
-                    <div class="tag">
+                <div class="node" data-aos="fade-right">
+                    <div class="tag" data-aos="fade-left">
                         <p>
                             <p class="tag">
                                NodeJS
@@ -136,13 +140,14 @@
                             </p>
                         </p>
                     </div>
-                    <p class="node_stat"></p>
+                    <p class="node_stat" data-aos="fade-right"></p>
                 </div>
             </div>
           </div>
         </div>
-        <div class="completes">
-            <div class="projects_completed">
+        <div class="completes" data-aos="fade-left">
+            <div class="projects_completed" data-aos="faded-left"
+            data-aos-delay="70">
                 <div class="logo"><i class="fa-solid fa-thumbs-up"></i></div>
                 <div class="data">
                     <p class="head">
@@ -153,7 +158,8 @@
                     </p>
                 </div>
             </div>
-            <div class="projects_completed">
+            <div class="projects_completed" data-aos="faded-left"
+            data-aos-delay="50">
                 <div class="logo"><i class="fa-solid fa-mug-hot"></i></div>
                 <div class="data">
                     <p class="head">
@@ -164,7 +170,8 @@
                     </p>
                 </div>
             </div>
-            <div class="projects_completed">
+            <div class="projects_completed" data-aos="faded-left"
+            data-aos-delay="30">
                 <div class="logo"><i class="fa-solid fa-users"></i></i></div>
                 <div class="data">
                     <p class="head">
@@ -175,7 +182,8 @@
                     </p>
                 </div>
             </div>
-            <div class="projects_completed">
+            <div class="projects_completed" data-aos="faded-left"
+            data-aos-delay="10">
                 <div class="logo"><i class="fa-solid fa-certificate"></i></div>
                 <div class="data">
                     <p class="head">
@@ -195,10 +203,10 @@
 
       <div class="services">
         <a name="services"></a>
-        <h1 class="ser_head">
+        <h1 class="ser_head" data-aos="fade-right">
           Services
         </h1>
-        <div class="boxes">
+        <div class="boxes" data-aos="fade-up">
           <div class="box1">
             <div class="image">
               <i class="fa-brands fa-python"></i>
@@ -228,7 +236,7 @@
             <div class="head">
               NodeJS
            </div>
-           <div class="text">
+           <div class="text" >
             Enhancing Your Web Presence: Affordable Brilliance in Web Development.
            </div>
           </div>
@@ -238,10 +246,48 @@
 
 
 
+
+      <!-- RECENT WORKS  -->
+
+
+      <a name="works"></a>
+      <div class="recent_works">
+        <div class="head" data-aos="fade-right">
+          <h1>
+            Recent Works
+          </h1>
+        </div>
+        <div class="cards">
+          <div class="first_three">
+            <div class="first" data-aos="zoom-in"></div>
+            <div class="first" data-aos="zoom-in"></div>
+            <div class="first" data-aos="zoom-in"></div>
+          </div>
+          <div class="second_three">
+            <div class="first" data-aos="zoom-in"></div>
+            <div class="first" data-aos="zoom-in"></div>
+            <div class="first" data-aos="zoom-in"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer>
+       <a href="https://github.com/adiyadav123" target="_blank"><h1>©️ Aditya Yadav </h1></a>
+      </footer>
     </div>
 
 
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+    <script>
+      AOS.init({
+        duration: "1000"
+      });
+    </script>
+
   </body>
 </html>
