@@ -241,6 +241,7 @@ nav > h1 {
   background-color: white;
   color: black;
   display: flex;
+  margin: 0;
   /* align-items: center; */
   justify-content: center;
   flex-direction: column;
@@ -398,8 +399,9 @@ nav > h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0;
 }
-.services .head {
+.services .ser_head {
   height: 10vh;
   width: 100%;
   padding: 10px 20px;
@@ -418,6 +420,24 @@ nav > h1 {
   border-radius: 10px;
   box-shadow: 0 0 20px #8989e8;
   width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px ;
+}
+.boxes .box1 .image {
+  font-size: 45px;
+  color: var(--yellow);
+}
+.boxes .box1 .head{
+  color: white;
+  font-size: 19px;
+}
+.boxes .box1 .text {
+  color: white;
+  font-size: 14px;
 }
 .boxes .box2{
   height: 85%;
@@ -425,7 +445,22 @@ nav > h1 {
   background-color: var(--yellow);
   border-radius: 10px;
   box-shadow: 0 0 20px #e4d38d;
-
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.boxes .box2 .image {
+  font-size: 45px;
+  color: #b49c40;
+}
+.boxes .box2 .head{
+  font-size: 19px;
+}
+.boxes .box2 .text {
+  font-size: 14px;
 }
 .boxes .box3{
   height: 85%;
@@ -433,7 +468,25 @@ nav > h1 {
   background-color: var(--red);
   border-radius: 10px;
   box-shadow: 0 0 20px #eb9090;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
 }
+.boxes .box3 .image {
+  color: var(--yellow);
+  font-size: 45px;
+}
+.boxes .box3 .head{
+  font-size: 19px;
+}
+.boxes .box3 .text {
+  font-size: 14px;
+}
+
 .box1:hover {
   transform: scale(1.1);
   box-shadow: 0 0 40px #8989e8;
@@ -446,6 +499,7 @@ nav > h1 {
   transform: scale(1.1);
   box-shadow: 0 0 40px #eb9090;
 }
+
 
 
 /* MAKING RESPONSIVE  */
@@ -544,4 +598,38 @@ nav > h1 {
   .completes .projects_completed {
     margin: 10px;
   }
+
+  .services {
+    width: 100%;
+    padding: 0;
+    margin-top: -35px;
+  }
+  .services .ser_head{
+    height: 10vh;
+  }
+  .services .boxes {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    transform: scale(0.9);
+  }
+  .services .boxes .box1 {
+    width:80%;
+    margin-bottom: 10px;
+  }
+  .services .boxes .box2 {
+    width:80%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .services .boxes .box3 {
+    width:80%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .ser_head{
+    text-align: center;
+  }
+
 }
