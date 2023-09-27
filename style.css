@@ -520,6 +520,7 @@ nav > h1 {
 }
 .recent_works .head{
   margin-bottom: 40px;
+  color: var(--red);
 }
 .recent_works .cards{
   display: flex;
@@ -545,14 +546,89 @@ nav > h1 {
   background-color: white;
   box-shadow: 0 0 20px rgb(229, 226, 226);
   border-radius: 10px;
+  padding: 20px;
   cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .recent_works .first_three .first:hover, .recent_works .second_three .first:hover{
 
   transform: scale(0.9);
 
 }
+.first_three .apple .image{
+  background-image: url('./assets/joke_code.webp');
+  height: 100%;
+  padding: 20px;
+  background-color: var(--yellow);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.first_three .text, .second_three .text{
+  padding: 30px;
+}
+.first_three .text h1, .second_three .text h1{
+  font-size: 20px;
+  color: var(--bright-blue);
+}
+.first_three .text a , .second_three .text a{
+  color: var(--red);
+  font-size: 20px;
+}
+.first_three .text a:hover , .second_three .text a:hover{
+  color: var(--yellow);
+  text-decoration: underline;
+}
 
+.first_three .bmi .image{
+  background-image: url('./assets/bmi_code.webp');
+  height: 100%;
+  padding: 20px;
+  background-color: var(--yellow);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.first_three .char .image{
+  background-image: url('./assets/char_code.webp');
+  height: 100%;
+  padding: 20px;
+  background-color: var(--yellow);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.second_three .country .image{
+  background-image: url('./assets/country_code.webp');
+  height: 100%;
+  padding: 20px;
+  background-color: var(--yellow);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.second_three .dictionary .image{
+  background-image: url('./assets/dictionary_code.webp');
+  height: 100%;
+  padding: 20px;
+  background-color: var(--yellow);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.second_three .quiz .image{
+  background-image: url('./assets/quiz_code.webp');
+  height: 100%;
+  padding: 20px;
+  background-color: var(--yellow);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
 
 /* MAKING RESPONSIVE  */
 
